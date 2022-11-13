@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h1>ToDo List на чистом JavaScript</h1>
+<div class="flex-inp">
+    <div class="add-todo-inp">
+        <div class="div1" >
+            <input type="text" id = "inp">
+        </div>
+        <div class="div1">
+            <input type="button" id="addTodo" size="2" value="Добавить" >
+        </div>
+    </div>
+</div>
+
+    <div class="select">
+        <h3 class="block-text" >Фильтрация задач по статусу</h3>
+        <select id="selectLT" class="selectLT" >
+            <option class="lt" value="1">Все</option>
+            <option class="lt" value="2">В процессе</option>
+            <option class="lt" value="3">Выполненые</option>
+        </select>
+        <input type="button" id="delTodo"  size="2" value="Удаление всех задач" >
+    </div>
+
+<h2 class="block-text2">Список дел</h2>
+<div class="todolist"></div>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
